@@ -1,0 +1,14 @@
+{
+	"id": "{D99C425B-F92E-43E9-F83E-EEBCB2AAD62E}",
+	"name": "Power",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Power"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "PWR"
+}

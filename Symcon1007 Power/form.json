@@ -1,0 +1,73 @@
+{
+  "elements":
+  [
+
+    { "type": "Label"             , "label":  "####### Power V 1.0 #######" },
+    
+    { "type": "Button"            , "caption": "Dokumentation", "onClick": "echo 'https://github.com/1007/Symcon1007_Lights/tree/master';" },
+    
+	{ "type": "SelectInstance", "name": "PropertyInstanceID", "caption": "Target" },
+
+	{ "type": "Select", "name": "PropertyDeviceType", "caption": "Typ",
+		"options": 	[
+					{ "caption": "Deaktiviert" 	, "value": 0 },
+					{ "caption": "Schalter"		, "value": 1 },
+					{ "caption": "Dimmer"		, "value": 2 },
+					{ "caption": "RGB"			, "value": 3 }
+					]
+	},
+
+
+    { "type": "CheckBox"          , "name" :  "PropertyLogging", "caption": "Logging (../logs/Lights/Lights.log)" } ,
+
+	{ "type": "TestCenter" }
+
+  
+  ],
+  
+  "actions":
+	[
+		{ "type": "RowLayout",
+			"items": 
+				[
+					{ "type": "Label"             , "label":  "Schalter" },
+					{ "type": "Button", "caption": "EIN", "onClick": "LGT_DoAction($id,1,true);" },
+					{ "type": "Button", "caption": "AUS", "onClick": "LGT_DoAction($id,1,false);" }
+				]
+		},
+
+		{ "type": "RowLayout",
+			"items": 
+				[
+					{ "type": "Label"             , "label":  "Dimmer" },
+					{ "type": "HorizontalSlider", "name": "SliderDimmer", "caption": "Dimmer", "minimum": 0, "maximum": 100, "onChange": "LGT_DoAction($id,2,$SliderDimmer);" }
+				]
+		},
+
+
+		{ "type": "RowLayout",
+			"items": 
+				[
+					{ "type": "Label"             , "label":  "RGB" },
+					{ "type": "Button", "caption": "EIN", "onClick": "LGT_DoAction($id,5,true);" },
+					{ "type": "Button", "caption": "AUS", "onClick": "LGT_DoAction($id,5,false);" },
+					{ "type": "HorizontalSlider", "name": "SliderRGB", "caption": "Intensitaet", "minimum": 0, "maximum": 100, "onChange": "LGT_DoAction($id,3,$SliderRGB);" },
+					{ "type": "SelectColor", "name": "HexColor", "caption": "Farbe"  },
+					{ "type": "Button", "caption": "Farbe uebernehmen", "onClick": "LGT_DoAction($id,4,$HexColor);" }
+				]
+		}
+
+
+  ],
+
+
+  "status":
+    [
+        { "code": 101, "icon": "active", "caption": "Power wird erstellt..." },
+        { "code": 102, "icon": "active", "caption": "Power ist aktiv" }
+        
+    ]
+
+
+
+}

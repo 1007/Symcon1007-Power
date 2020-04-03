@@ -56,11 +56,11 @@ class Lights extends IPSModule
 
 		$this->RegisterAttributeInteger("AttributTimeClock", 0);
 		$this->RegisterAttributeInteger("AttributManuelMode", 0);
-    $this->RegisterAttributeInteger("AttributAktivatedByPiri", 0);
-    $this->RegisterAttributeInteger("AttributAktivatedByManual", 0);
+        $this->RegisterAttributeInteger("AttributAktivatedByPiri", 0);
+        $this->RegisterAttributeInteger("AttributAktivatedByManual", 0);
 
 
-		// Diese Zeile nicht l�schen.
+		// Diese Zeile nicht loeschen.
 		parent::Create();
  
 		}

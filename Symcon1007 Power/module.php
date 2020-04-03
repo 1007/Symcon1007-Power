@@ -12,18 +12,18 @@ class Lights extends IPSModule
 	{
 	//******************************************************************************
 	// Der Konstruktor des Moduls
-	// Überschreibt den Standard Kontruktor von IPS
+	// ï¿½berschreibt den Standard Kontruktor von IPS
 	//******************************************************************************
 	public function __construct($InstanceID) 
 		{
-		// Diese Zeile nicht löschen
+		// Diese Zeile nicht loeschen
 		parent::__construct($InstanceID);
  
 		// Selbsterstellter Code
 		}
 
 	//******************************************************************************
-	// Überschreibt die interne IPS_Create($id) Funktion	
+	// ï¿½berschreibt die interne IPS_Create($id) Funktion	
 	//****************************************************************************** 
 	public function Create()
 		{
@@ -60,13 +60,13 @@ class Lights extends IPSModule
     $this->RegisterAttributeInteger("AttributAktivatedByManual", 0);
 
 
-		// Diese Zeile nicht löschen.
+		// Diese Zeile nicht lï¿½schen.
 		parent::Create();
  
 		}
  
 	//******************************************************************************
-	// Überschreibt die intere IPS_ApplyChanges($id) Funktion	
+	// ï¿½berschreibt die intere IPS_ApplyChanges($id) Funktion	
 	//******************************************************************************
 	public function ApplyChanges()
 		{
@@ -75,7 +75,7 @@ class Lights extends IPSModule
 		$this->CheckConfiguration();
 
 
-		// Diese Zeile nicht löschen
+		// Diese Zeile nicht lï¿½schen
 		parent::ApplyChanges();
 		}
  

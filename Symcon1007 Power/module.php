@@ -66,7 +66,7 @@ class Lights extends IPSModule
 		}
  
 	//******************************************************************************
-	// �berschreibt die intere IPS_ApplyChanges($id) Funktion	
+	// ueberschreibt die intere IPS_ApplyChanges($id) Funktion	
 	//******************************************************************************
 	public function ApplyChanges()
 		{

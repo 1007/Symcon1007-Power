@@ -60,7 +60,7 @@ class Lights extends IPSModule
         $this->RegisterAttributeInteger("AttributAktivatedByManual", 0);
 
 
-		// Diese Zeile nicht loeschen.
+		// Diese Zeile nicht l�schen.
 		parent::Create();
  
 		}
